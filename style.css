@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(185, 75%, 39%);
+    background-image: 
+        url(images/bg-pattern-top.svg),
+        url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: right calc(47vw + 24%) bottom calc(65vh - 15vw),
+    left calc(40vw + 25%) top calc(72vh - 10vw);
+    overflow: hidden;
+    font-family: 'Kumbh Sans';
+    color: hsl(229, 23%, 23%);
+    font-size: 16px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 1em;
+}
+
+.pattern-card img{
+    border-radius: 1em 1em 0 0;
+}
+
+.profile-image{
+    position: absolute;
+    transform: translateY(75%) scale(70%);
+}
+
+.profile-image img{
+    border: .4em solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2em;
+}
+
+.profile-info{
+    max-width: 70%;
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: .4em;
+}
+.profile-info h1{
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+#span{
+    color: hsl(230, 25%, 77%);
+    font-weight: 400;
+}
+
+
+.content::after{
+    content: "";
+    display: block;
+    background-color: hsl(0, 0%, 59%);
+    position: absolute;
+    bottom: 6em;
+    height: 1px;
+    width: 100%;
+}
+
+.stats-info{
+    display: flex;
+    gap: 1.5em;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em;
+}
+
+.stats-info p{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: .8em;
+}
+
+
+#span1, #span2, #span3{
+    align-content: center;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+    font-size: 1.2em;
+}
+
+p{
+    color: hsl(230, 15%, 60%);;
+}
